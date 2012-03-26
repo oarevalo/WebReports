@@ -5,7 +5,7 @@
 
 <cfparam name="report" default="">
 
-<cfset viewerURL = "/WebReports/Viewer/index.cfm">
+<cfset viewerURL = "/WebReports/viewer/index.cfm">
 <cfset reportURL = "/WebReports/docs/samples/integration/reports/" & report>
 <cfset exitURL = "/WebReports/docs/samples/integration">
 

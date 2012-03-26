@@ -1,4 +1,4 @@
-<cfcomponent extends="WebReports.Common.Components.lib.daoFactory.DAO">
+<cfcomponent extends="WebReports.common.components.lib.daoFactory.DAO">
 
 	<cffunction name="initTableParams" access="package" returntype="void" hint="setup table specific settings">
 		<cfset setTableName("orders")>

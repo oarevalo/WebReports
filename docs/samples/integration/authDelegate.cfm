@@ -6,7 +6,7 @@
 <cfparam name="referrer" default="">
 
 <!--- create a new response object --->
-<cfset oAuthResponse = createObject("component","WebReports.Common.Components.authResponse").init()>
+<cfset oAuthResponse = createObject("component","WebReports.common.components.authResponse").init()>
 
 
 <!--- validate report access --->

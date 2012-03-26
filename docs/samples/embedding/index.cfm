@@ -1,7 +1,7 @@
 <cfparam name="selectedState" default="">
 <cfscript>
 	// get the report
-	oReport = createObject("component","WebReports.Common.Components.Report").init();
+	oReport = createObject("component","WebReports.common.components.Report").init();
 	oReport.open("/WebReports/SampleReports/customerListing.xml");
 
 
@@ -15,12 +15,12 @@
 
 	
 	// create datasource
-	oDataSourceBean = createObject("component","WebReports.Common.Components.datasource").init();
+	oDataSourceBean = createObject("component","WebReports.common.components.datasource").init();
 	oDataSourceBean.setName("webreportsdemo");
 
 
 	// create data provider
-	oDataProvider = createObject("component","WebReports.Common.Components.DBDataProvider").init( oDataSourceBean );
+	oDataProvider = createObject("component","WebReports.common.components.DBDataProvider").init( oDataSourceBean );
 
 
 	// get the available values for the 'State' column so that we can build our filter control
@@ -28,13 +28,13 @@
 	
 
 	// Create ReportRenderBean component
-	oReportRenderBean = createObject("Component","WebReports.Common.Components.ReportRenderBean");
+	oReportRenderBean = createObject("Component","WebReports.common.components.ReportRenderBean");
 	oReportRenderBean.setScreenWidth(800);
 	oReportRenderBean.setScreenHeight(400);
 
 
 	// Create ReportRenderer component
-	oReportRenderer = createObject("Component","WebReports.Common.Components.ReportRenderer");
+	oReportRenderer = createObject("Component","WebReports.common.components.ReportRenderer");
 	oReportRenderer.init(oReport, oReportRenderBean, oDataProvider);
 
 

@@ -23,10 +23,10 @@
 <cfset numCustomers = 100>
 <cfset numOrders = 100>
 
-<cfset oConfigBean = createObject("component","WebReports.Common.Components.lib.daoFactory.dbDataProviderConfigBean").init()>
+<cfset oConfigBean = createObject("component","WebReports.common.components.lib.daoFactory.dbDataProviderConfigBean").init()>
 <cfset oConfigBean.setDSN( dsn )>
 <cfset oConfigBean.setDBType( dbtype )>
-<cfset oDataProvider = createObject("component", "WebReports.Common.Components.lib.daoFactory.dbDataProvider").init( oConfigBean )>
+<cfset oDataProvider = createObject("component", "WebReports.common.components.lib.daoFactory.dbDataProvider").init( oConfigBean )>
 
 <!--- create data objects --->
 <cfset oCustomersDAO = createObject("component","WebReports.docs.samples.components.customersDAO").init( oDataProvider )>

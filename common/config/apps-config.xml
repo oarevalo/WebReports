@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<config>
+	<!-- This section describes application-specific settings -->
+	<settings>
+		<setting name="versionTag" value="1.0.130b" />
+		
+		<!-- This setting activates the Managed Reports features. -->
+		<Setting name="useManagedReports" value="true" />
+		
+		<!-- This is the path where the reports are stored -->
+		<Setting name="reportRepositoryPath" value="/WebReports/sampleReports" />
+
+		<!-- This setting can be used to restrict what datasources will be allowed to use for reports. 
+			When empty, the user will be prompted to type in the datasource.
+		-->
+		<Setting name="allowedDatasources" value="" />
+
+		<!-- Path to DAOFactory configuration file -->
+		<setting name="DAOConfigPath" value="/WebReports/common/config/dao-config.xml" />
+
+		<!-- This flag controls whether detailed error information is displayed
+			in case the application encounters an unhandled exception -->
+		<Setting name="debugMode" value="true" />
+		
+		<!-- These settings control the bug reporting features. Use 
+			in conjunction with the appropriate bugtracking service.
+			To start submitting bug reports add an email address to the
+			bugEmailRecipients setting; and/or use the bugLogListener
+			setting to hook into a bugLog server -->
+		<setting name="bugEmailRecipients" value="you@your.domain" />
+		<setting name="bugEmailSender" value="webreports@localhost" />
+		<setting name="bugLogListener" value="" />
+
+		<!-- The path to the dataprovider class to use to obtain the data -->
+		<setting name="defaultDataProvider" value="WebReports.common.components.DBDataProvider" />	
+		
+		<!-- When False, the Report Viewer will only allow opening reports that are
+			contained in the Report Library. This is only used when the useManagedReports setting
+			is set to True -->
+		<setting name="allowOpenReportsByName" value="true" />
+		
+		<!-- These settings can be used to change the branding of the interface, they 
+			control the logo displayed on the top left corner of the user interface -->
+		<setting name="logoImageURL" value="/WebReports/common/images/webreports_viewer.jpg" />
+		<setting name="logoLinkURL" value="http://www.cfempire.com" />
+		
+		<!-- Enable this if http requests should be directed to the localhost instead of
+			the current domain name -->
+		<setting name="useLocalhostAsInternalServerName" value="false" />
+	</settings>
+
+
+	<!-- This section describes all services that will be loaded into the application -->
+	<services>
+		<service name="DAOFactory" class="WebReports.common.components.lib.daoFactory.DAOFactory">
+			<init-param name="configDocPath" settingName="DAOConfigPath" />
+		</service>
+		
+		<!-- error reporting service  -->
+		<service name="bugTracker" class="WebReports.common.components.lib.bugTrackerService">
+			<init-param name="bugEmailSender" settingName="bugEmailSender" />
+			<init-param name="bugEmailRecipients" settingName="bugEmailRecipients" />
+		</service>
+
+		<!-- Use this service to hook into a bugLog server 
+		<service name="bugTracker" class="WebReports.Common.Components.lib.bugLogService">
+			<init-param name="bugLogListener" settingName="bugLogListener" />
+			<init-param name="bugEmailRecipients" settingName="bugEmailRecipients" />
+			<init-param name="bugEmailSender" settingName="bugEmailSender" />
+		</service> -->
+	</services>
+</config>
+

@@ -7,7 +7,7 @@
 
 
 <!--- create a new response object --->
-<cfset oAuthResponse = createObject("component","WebReports.Common.Components.authResponse").init()>
+<cfset oAuthResponse = createObject("component","WebReports.common.components.authResponse").init()>
 
 
 <!--- /// ... here goes the logic that checks whether we should allow the user to 
