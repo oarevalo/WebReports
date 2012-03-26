@@ -1,0 +1,9 @@
+#ViewerMenuBar { background-color:#91B5FF; }
+#reportTitle { color:white; }
+#reportSubtitle { color:white; }
+
+#menuButtons a:hover { 	
+	color: #fff;
+	background-color: #ccc; 
+} 
+#menuButtonsSelected { background-color: #669999; }

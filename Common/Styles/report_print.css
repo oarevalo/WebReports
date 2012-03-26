@@ -1,0 +1,67 @@
+body  {
+	font-family:Verdana,Helvetica,Geneva,sans-serif !important;
+	margin: 0px;
+	padding: 0px;
+}
+table {
+	border-collapse:collapse;
+	width:100%;
+}	
+	
+thead#ReportHeader td, thead#ReportHeader th {
+	padding-top:3px;
+	padding-bottom:3px;
+}	
+
+thead#ReportHeader th {
+	font-weight: bold;
+	text-align: center;
+	background-color: #31619C;
+	color: #fff;
+	overflow: hidden;
+}	
+
+td	{
+	color: #000;
+	padding-right: 2px;
+	text-align: left;
+}
+
+tfoot#ReportFooter td {
+	color:#000;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.GroupHeader_1, .GroupHeader_2,
+.GroupHeader_3, .GroupHeader_4,
+.GroupHeader_5, .GroupHeader_6,
+.GroupHeader_7, .GroupHeader_8 {
+	font-family:Verdana,Helvetica,Geneva,sans-serif !important;
+	padding-top:10px;
+	padding-left:3px;
+	padding-bottom:3px;
+}
+
+.GroupHeader_1 {font-weight:bold;}
+ 
+.GroupHeader_2, .GroupHeader_4,
+.GroupHeader_6, .GroupHeader_8 {
+	font-style:italic;
+}
+
+.GrandTotal {
+	font-weight : bold; 
+	text-decoration : none;
+}
+
+/* Alternating rows */
+.AlternatingRow_1 {background-color:#ffffff;}
+.AlternatingRow_0 {background-color:#f2f2f2;}
+
+.Date {font-size : 12px; font-weight : bold; text-align : left; border:0px !important;line-height:18px;padding-bottom:20px;}
+.Title {font-size : 18px; font-weight : bold; text-align : left; border:0px !important;line-height:27px;}
+.SubTitle {font-size : 16px; font-weight : bold; text-align : left; border:0px !important;line-height:24px;}
+
+.PageHeader {display: table-header-group;}
+.PageFooter {display: table-footer-group;}

@@ -1,0 +1,72 @@
+body  {
+	font-family:Verdana,Helvetica,Geneva,sans-serif !important;
+	margin: 0px;
+	padding: 0px;
+}
+
+table.ViewerTable {
+	background-color: #f7f7f7;
+	font-family:Verdana,Helvetica,Geneva,sans-serif !important;
+}
+
+thead#ReportHeader th {
+	font-weight: bold;
+	text-align: center;
+	background-color: #31619C;
+	color: #fff;
+	border-right:1px solid #333;
+	border-left:1px solid #ccc;
+	overflow: hidden;
+}
+
+td	{
+	color: #000;
+	padding-right: 2px;
+	text-align: left;
+	border-bottom: solid 1px #d8d8d8;
+	border-left: solid 1px #d8d8d8;
+}
+
+tfoot#ReportFooter td {
+	background-color: #31619C;
+	color:#fff;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+
+.GroupHeader_1, .GroupHeader_2,
+.GroupHeader_3, .GroupHeader_4,
+.GroupHeader_5, .GroupHeader_6,
+.GroupHeader_7, .GroupHeader_8 {
+	font-family:Verdana,Helvetica,Geneva,sans-serif !important;
+	padding-top:3px;
+	padding-left:3px;
+	padding-bottom:3px;
+	background-color:#86B6EF;
+}
+
+.GroupHeader_2, .GroupHeader_4,
+.GroupHeader_6, .GroupHeader_8 {
+	font-style:italic;
+}
+
+.GroupHeader_1 {font-weight:bold;}
+.GroupHeader_2 {padding-left:8px;background-color:#A4C6EF;}
+.GroupHeader_3 {padding-left:16px;background-color:#C2D7EF;}
+.GroupHeader_4 {padding-left:24px;background-color:#E0E7EF;}
+.GroupHeader_5 {padding-left:32px;background-color:#D1DFEF;}
+.GroupHeader_6 {padding-left:40px;background-color:#D1DFEF;}
+.GroupHeader_7 {padding-left:48px;background-color:#D1DFEF;}
+.GroupHeader_8 {padding-left:56px;background-color:#EFEFEF;}
+
+.GrandTotal {
+	font-weight : bold; 
+	text-decoration : none;
+}
+
+/* Alternating rows */
+.AlternatingRow_1 {background-color:#ffffff;}
+.AlternatingRow_0 {background-color:#f2f2f2;}
+
+ 

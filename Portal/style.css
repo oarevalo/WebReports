@@ -1,0 +1,122 @@
+/* CSS Declarations for WebReports Portal ***/
+
+body {
+	font-size:12px;
+	line-height:14px;
+}
+a:link, a:visited, a:active {
+	color : #006699;	
+	font-size:12px;
+}
+a:hover {
+	color: black;
+	font-size:12px;
+}
+ul li {
+	line-height:18px;
+}
+
+
+h2.pageTitle {
+    font-size:16px;
+    border-bottom:1px solid black;
+	font-family: "trebuchet MS", Arial, Helvetica, "Sans Serif";
+	color:#333;
+	line-height:22px;
+}
+
+
+
+/***********  Grids and Forms *************/
+.browseTable {
+	border-bottom:1px solid #333;
+	width:95%;
+	#width:750px;
+}
+
+.browseTable th {
+    background-color:#50628b;
+	line-height: 18px;
+	color: #FFFFFF;
+	padding: 3px 9px 3px 9px;
+	font-size:13px;
+	font-weight:bold;
+}
+.browseTable td {
+	line-height: 16px;
+	color: #333;
+	padding: 3px 3px 3px 9px;
+	font-size:11px;
+}
+.altRow {
+    background-color:#F6F6F6;
+}
+
+.listTI {
+    background-color:#6b8091;
+}
+.browseTable tr:hover {
+    background-color:#ebebeb;
+}
+.browseTable th a {
+    color:white;
+    text-decoration:none;
+}
+.browseTable th a:hover {
+    text-decoration:underline;
+}
+
+
+.cp_sectionBox {
+	border:1px solid #ccc;
+	padding:0px;
+	margin:0px;
+	overflow:auto;
+	background-color:#ffffff;
+	color:black;
+	font-size:11px;
+}
+.cp_sectionBox td {
+	font-size:11px;
+}
+.cp_sectionBox input,
+.cp_sectionBox td input,
+.cp_sectionBox textarea,
+.cp_sectionBox select {
+    border:1px solid #333333;
+    font-size:11px;
+    font-family:arial;
+    padding:1px;
+}
+.cp_sectionBox a,
+.cp_sectionBox a:active,
+.cp_sectionBox a:link,
+.cp_sectionBox a:visited {
+    color:#333 !important;
+    text-decoration:none;
+}
+.cp_sectionBox a:hover {
+    text-decoration:underline;
+}
+.cp_sectionBox h2 {
+	font-size:18px;
+	font-weight:bold;
+}
+
+.helpBox {
+	background-color:#ffffe1;
+	
+}
+
+.formField {
+    border:1px solid silver;
+    font-size:13px;
+    padding:3px;
+    width:400px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.formFieldTip {
+    font-size:11px;
+    margin-bottom:15px;
+    color:#808080;
+}

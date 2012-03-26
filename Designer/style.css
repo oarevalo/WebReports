@@ -1,0 +1,84 @@
+/* CSS Declarations for WebReports Designer ***/
+
+#MyReport {
+	margin:10px;
+	border:1px solid black;
+}
+
+#reportHeader {
+    margin:0px;
+    padding:0px;
+    margin-right:200px;
+}
+#reportHeader table {
+    border-collapse:collapse;
+    font-size:12px;
+    font-family:arial, helvetica, sans-serif;
+    color:#999999;
+    background-color:#fff;
+    font-weight:bold;
+    margin:0px;
+    margin-left:20px;
+}
+#reportHeader input {
+    border:1px solid black;
+}
+
+#reportPreview {
+    margin-right:200px;
+    position:absolute;
+    top:120px;
+}
+#reportPreview iframe {
+    border:1px solid black;
+    margin:20px;
+    margin-top:0px;
+    z-index:1;
+    clear:none;
+}
+
+#reportControls {
+    float:right;
+    width:200px;
+    color:black;
+    font-size:11px;
+    font-family:arial, helvetica, sans-serif;
+    background-color:#F5F5F5;
+    border-left:1px solid #CCCCCC;
+	overflow:auto;
+}
+
+#frmDatabase {
+    height:175px;
+}
+#frmDatabase input[type=text],
+#frmDatabase input[type=password],
+#frmDatabase select {
+    width:130px;
+}
+#frmColumnProperties {
+    height:315px;
+}
+
+.podTitle {
+    background-color:#91B5FF;
+    color:white;
+    font-weight:bold;
+    font-size:11px;
+    font-family:arial, helvetica, sans-serif;
+    border-top:1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+    cursor:pointer;
+}
+
+
+/*** MessageBox *** */
+.standardMessageBox {
+}
+.fancyMessageBox {
+	position:absolute;
+	top:0px;
+	width:500px;
+	
+	border:1px solid #999999;
+}
