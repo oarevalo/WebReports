@@ -2,13 +2,13 @@
 <config>
 	<!-- This section describes application-specific settings -->
 	<settings>
-		<setting name="versionTag" value="1.0.130b" />
+		<setting name="versionTag" value="1.1" />
 		
 		<!-- This setting activates the Managed Reports features. -->
 		<Setting name="useManagedReports" value="true" />
 		
 		<!-- This is the path where the reports are stored -->
-		<Setting name="reportRepositoryPath" value="/WebReports/sampleReports" />
+		<Setting name="reportRepositoryPath" value="/WebReports/reports" />
 
 		<!-- This setting can be used to restrict what datasources will be allowed to use for reports. 
 			When empty, the user will be prompted to type in the datasource.

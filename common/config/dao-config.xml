@@ -4,20 +4,21 @@
 		db: standard datasource
 		xml: xml storage (file-based)
 	 -->
-	<dataProviderType>xml</dataProviderType>
+	<dataProviderType>db</dataProviderType>
 
 	<!-- this is the path to where the DAOs for the application are stored -->
-	<clientDAOPath>WebReports.Common.Components.db.</clientDAOPath>
+	<clientDAOPath>WebReports.common.components.db.</clientDAOPath>
 
 	<properties>
-		<!-- xml storage -->
+		<!-- xml storage 
 		<property name="dataRoot" value="/WebReports/data/" />
+		-->
 		
 		<!-- database storage:
 			dsn: Name of the datsource to use
-			dbtype: type of database, supported DBs are mysql, mssql, access 
-		<property name="dsn" value="WebReports" />
+			dbtype: type of database, supported DBs are mysql, mssql, access -->	
+		<property name="dsn" value="webreports" />
 		<property name="dbtype" value="mysql" />
-		-->	
+		
 	</properties>
 </config>

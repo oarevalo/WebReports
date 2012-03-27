@@ -78,7 +78,9 @@
 		<cfoutput>
 			<div id="mainContent">
 				<!--- Display any system messages sent from the event hander --->
-				<cfinclude template="../includes/message.cfm">
+				<cfif request.requestState.messageTemplatePath neq "">
+					<cfinclude template="#request.requestState.messageTemplatePath#">
+				</cfif>
 
 				<cftry>
 					<!--- Render the view --->

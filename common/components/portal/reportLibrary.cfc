@@ -241,7 +241,6 @@
 			oDAO.save(reportName = xmlDoc.xmlRoot.title.xmlText,
 						reportHREF = arguments.href,
 						description = xmlDoc.xmlRoot.subtitle.xmlText,
-						storedConnectionID = "",
 						datasource = arguments.datasource,
 						username = arguments.username,
 						password = arguments.password,

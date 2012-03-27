@@ -1,13 +1,11 @@
-<cfcomponent displayname="Controller" extends="WebReports.Application">
+<cfcomponent extends="WebReports.common.components.Application">
 	
 	<!--- Application settings --->
 	<cfset this.name = "WebReportsPortal"> 
 
-	<!--- Framework settings --->
+	<!--- Framework Settings --->
+	<cfset this.paths.app = "/WebReports/portal/">
 	<cfset this.defaultEvent = "ehGeneral.dspStart">
-	<cfset this.defaultLayout = "Layout.Main">
-	<cfset this.appPath = "/WebReports/portal">
-	<cfset this.forceRedir = "">
 
 	<cffunction name="onSessionEnd" returnType="void">
 		<cfargument name="sessionScope" required="True" />
@@ -20,4 +18,5 @@
 			</cfif>
 		</cfif>
 	</cffunction>
+
 </cfcomponent>

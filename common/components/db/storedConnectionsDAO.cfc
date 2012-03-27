@@ -1,7 +1,7 @@
 <cfcomponent extends="WebReports.common.components.lib.daoFactory.DAO">
 
 	<cffunction name="initTableParams" access="package" returntype="void" hint="setup table specific settings">
-		<cfset setTableName("wr_StoredConnections")>
+		<cfset setTableName("wr_stored_connections")>
 		<cfset setPrimaryKey("StoredConnectionID","cf_sql_numeric")>
 		
 		<cfset addColumn("connectionName", "cf_sql_varchar")>

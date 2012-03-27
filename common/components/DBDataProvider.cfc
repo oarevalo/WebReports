@@ -87,6 +87,12 @@
 
 	<cffunction name="getTypes" access="public" returntype="query">
 		<cfset var qryTypes = queryNew("type,name")>
+		<cfset queryAddRow(qryTypes)>
+		<cfset querySetCell(qryTypes,"type","mysql")>
+		<cfset querySetCell(qryTypes,"name","MySQL")>
+		<cfset queryAddRow(qryTypes)>
+		<cfset querySetCell(qryTypes,"type","mssql")>
+		<cfset querySetCell(qryTypes,"name","MS SQL Server")>
 		<cfreturn qryTypes>
 	</cffunction>
 

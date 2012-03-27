@@ -1,1 +1,1 @@
-<!--- this page is intentionally blank --->
+<cfinclude template="/WebReports/core/core.cfm">

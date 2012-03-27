@@ -5,7 +5,9 @@
 <cfparam name="request.requestState.refreshPods" default="false">
 
 <!--- Display any system messages sent from the event hander --->
-<cfinclude template="../includes/message.cfm">
+<cfif request.requestState.messageTemplatePath neq "">
+	<cfinclude template="#request.requestState.messageTemplatePath#">
+</cfif>
 
 <!--- Render the view --->
 <cfif request.requestState.viewTemplatePath neq "">

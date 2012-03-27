@@ -251,7 +251,7 @@
 				
 				setMessage("info", "Report saved");	
 			
-			} catch(any e) {
+			} catch(lock e) {
 				//getPlugin("logger").logError("Error opening report", e);
 				setMessage("error", e.message);			
 			}
