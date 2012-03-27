@@ -4,7 +4,9 @@ https://github.com/oarevalo/WebReports
 
 This is a tool to generate and interact with web-based reports.
 
-*Originally developed by CFEmpire corp (Anabel Fernandez and Oscar Arevalo)*
+*** Originally developed by CFEmpire corp (Anabel Fernandez and Oscar Arevalo) ***
+*** Licensed under the Apache License, Version 2.0 (see 'License' section below) ***
+
 
 Requirements:
 ----------------------
@@ -19,16 +21,14 @@ Setup:
 3. Run the sql script provided on /WebReports/install/mysql.sql  (for other databases you will need to translate to the appropriate dialect)
 4. Go to /WebReports in your browser. The app will ask you to create the admin user.
 
-The starting point is the Portal, from here follow the links to access the Report Designer (create new reports) 
-or the Report Viewer (view and interact with existing reports)
+The starting point is the Portal, from here follow the links to access the Report Designer (create new reports) or the Report Viewer (view and interact with existing reports)
 
 
 Configuration:
 -------------------
 The main configuration file is located at /WebReports/common/config/apps-config.xml
 
-To restrict the datasources that can be used to generate reports, change the
-<allowedDatasources /> setting to the list of the datasources you wish to allow for report generation.
+To restrict the datasources that can be used to generate reports, change the <allowedDatasources /> setting to the list of the datasources you wish to allow for report generation.
 
 To change the location where reports are saved, change the <reportRepositoryPath /> setting.
 
@@ -37,10 +37,20 @@ Integration Samples:
 -----------------------------
 Several demos and integration code samples are located in /WebReports/docs/samples/
 
-To run the demos you need to first generate the sample data. To do this first run the mysql script 
-in /WebRepors/docs/samples/install/demo_tables_mysql.sql, and then go to /WebRepors/docs/samples/install/setup.cfm 
-in your browser to generate the data.
+To run the demos you need to first generate the sample data. To do this first run the mysql script in /WebReports/docs/samples/install/demo_tables_mysql.sql, and then go to /WebReports/docs/samples/install/setup.cfm in your browser to generate the data.
 
 
+License:
+-------------
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.	
 
