@@ -1,16 +1,19 @@
 WebReports
+=========
 https://github.com/oarevalo/WebReports
 
 This is a tool to generate and interact with web-based reports.
 
-*** Originally developed by CFEmpire corp (Anabel Fernandez and Oscar Arevalo) ***
+*Originally developed by CFEmpire corp (Anabel Fernandez and Oscar Arevalo)*
 
 Requirements:
+----------------------
 - Railo 3 or higher, Adobe Coldfusion 8 or higher
 - MySQL 5 or higher (other SQL-based databases should work fine, you just need to add the proper SQL script to generate the tables)
 
 
 Setup:
+---------
 1. Unpack to a directory named "/WebReports"
 2. Create a datasource named "webreports"
 3. Run the sql script provided on /WebReports/install/mysql.sql  (for other databases you will need to translate to the appropriate dialect)
@@ -21,6 +24,7 @@ or the Report Viewer (view and interact with existing reports)
 
 
 Configuration:
+-------------------
 The main configuration file is located at /WebReports/common/config/apps-config.xml
 
 To restrict the datasources that can be used to generate reports, change the
@@ -30,6 +34,7 @@ To change the location where reports are saved, change the <reportRepositoryPath
 
 
 Integration Samples:
+-----------------------------
 Several demos and integration code samples are located in /WebReports/docs/samples/
 
 To run the demos you need to first generate the sample data. To do this first run the mysql script 
