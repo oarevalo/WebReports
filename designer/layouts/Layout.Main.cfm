@@ -12,7 +12,6 @@
 <cfset debugMode = request.requestState.debugMode>
 <cfset datasourceBean = request.requestState.datasourceBean>
 <cfset showDBDialog = request.requestState.showDBDialog>
-<cfset showDBDialog = isBoolean(showDBDialog) and showDBDialog>
 <cfset logoImageURL = request.requestState.logoImageURL>
 <cfset logoLinkURL = request.requestState.logoLinkURL>
 
@@ -37,7 +36,7 @@
 			window.onresize = resizePanes;
 		</script>
 	</head>
-	<body onload="<cfoutput>setupUI('#showDBDialog#');</cfoutput>">
+	<body onload="<cfoutput>setupUI('#ucase(yesNoformat(showDBDialog))#');</cfoutput>">
 		<!--- display header --->
 		<table id="ViewerHeader" width="100%" height="50">
 			<tr>
